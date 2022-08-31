@@ -1,13 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import UseCallbackExample from "./components/UseCallbackExample";
-import UseMemoExample from "./components/UseMemoExample";
 // import Home from "./components/Home";
 import UseRefExample1 from "./components/UseRefExample1";
 import UseRefExample2 from "./components/UseRefExample2";
 import UseRefExample3 from "./components/UseRefExample3";
-// import UseMemoExample from "./components/UseMemoExample";
-// import UseCallbackExample from "./components/UseCallbackExample";
-// import CustomHookExample1 from "./components/CustomHookExample1";
+import UseMemoExample from "./components/UseMemoExample";
+import UseCallbackExample from "./components/UseCallbackExample";
+import CustomHookExample1 from "./components/CustomHookExample1";
 // import CustomHookExample2 from "./components/CustomHookExample2";
 
 function App() {
@@ -21,10 +19,10 @@ function App() {
           <Route path="/useref-example-3" element={<UseRefExample3 />} />
           <Route path="/usememo-example" element={<UseMemoExample />} />/
           <Route path="/usecallback-example" element={<UseCallbackExample />} />
-          {/* <Route
+          <Route
             path="/custom-hook-example-1"
             element={<CustomHookExample1 />}
-          /> */}
+          />
           {/* <Route
             path="/custom-hook-example-2"
             element={<CustomHookExample2 />}

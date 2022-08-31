@@ -5,13 +5,14 @@ function UseRefExample1() {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(inputRef.current);
+        console.log(inputRef.current.value);
         document.getElementById('h1').innerText = inputRef.current.value;    
         inputRef.current.focus();   
         inputRef.current.value=""
     }
   return (
     <div className="container mt-5">
+        {/* To Create DOM Reference */}
       <h1 id="h1">Demo use of useRef Hook for creating DOM reference</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">

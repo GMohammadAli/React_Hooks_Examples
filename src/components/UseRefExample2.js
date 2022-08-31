@@ -11,7 +11,8 @@ function UseRefExample2() {
     }, [name])
 
   return (
-    <div className='container m-3'>
+    <div className='container mt-5'>
+        {/* To get Previous state */}
       <h1>Renders: {renders.current}</h1>
       <h2>PrevState : {prevName.current}</h2>
       <input type="text" value={name} placeholder="input" onChange={(e) => {
